@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
+
+.banner-area{
+    width: 100%;
+    height: 100vh;
+    background: url(space.jpg);
+    background-position: center;
+    -webkit-background-size:cover;
+    background-size:cover;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2vw;
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 14px 16px;
+    text-transform: uppercase;
+    animation: animate 2s 1;
+    transition: .6s;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 25px;
+}
+
+nav a:hover {
+	background-color: white;
+	color: black
+}
+
+.banner-area h2 {
+    font-family: poppins;
+    font-size: 65px;
+    margin: 0;
+    animation: animate 2s 1;
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 45px;
+    color: white;
+    border: 2px solid white;
+    animation: animate 2s 1;
+    transition: .6s;
+}
+
+.button:hover {
+    background-color: white;
+    color: #262626;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
